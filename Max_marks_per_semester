@@ -1,0 +1,12 @@
+def max_marks_per_semester():
+    semesters = int(input("Enter no of semesters: "))
+    for sem in range(1, semesters + 1):
+        subjects = int(input(f"Enter no of subjects in {sem} semester: "))
+        marks = list(map(int, input(f"Marks in semester {sem}: ").split()))
+        valid_marks = [m for m in marks if 0 <= m <= 100]
+        if len(valid_marks) != len(marks):
+            print("You have entered invalid mark.")
+            return
+        print(f"Maximum mark in {sem} semester: {max(valid_marks)}")
+
+# Test with sample: Run interactively
