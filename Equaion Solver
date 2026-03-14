@@ -1,0 +1,7 @@
+def solve_equation(a, b, c):
+    # Interpreted as a + ab + 2ab + 2ab + ab + b = a + (5ab) + b, but using c
+    result = a + 5*a*b + b + c  # Adjust based on unclear equation; common form
+    return result
+
+a, b, c = map(int, input().split())
+print(solve_equation(a, b, c))
