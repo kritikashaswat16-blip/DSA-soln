@@ -1,0 +1,7 @@
+n = int(input())
+cars = list(map(int, input().split()[:n]))
+bikes = list(map(int, input().split()[:n]))
+for i in range(n):
+    tyres = cars[i]*4 + bikes[i]*2
+    print(f"Dealership {i+1}: {cars[i]} cars, {bikes[i]} bikes -> {tyres} tyres")
+# Test input: 3\n4 4 1\n2 0 2
